@@ -46,7 +46,7 @@ const callApi = <T>(
         if (needLoading) {
           uni.hideLoading();
         }
-        resolve(data.data as T);
+        resolve(data.result as T);
       },
       fail: (error) => {
         if (needLoading) {

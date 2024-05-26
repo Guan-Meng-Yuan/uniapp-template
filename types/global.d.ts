@@ -10,7 +10,7 @@ declare global {
     readonly env: ImportMetaEnv;
   }
   interface Res<T> {
-    data?: T;
+    result?: T;
     success: boolean;
     tips: string;
   }
