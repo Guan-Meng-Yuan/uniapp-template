@@ -1,15 +1,8 @@
 <template>
-  <wd-button @click="topage">测试按钮</wd-button>
-  <wd-search></wd-search>
+  <div>测试页面</div>
 </template>
 
 <script setup lang="ts">
-
-const topage = () => {
-  uni.navigateTo({
-    url: '/pages/test/index'
-  })
-}
 onLoad(() => {
   // #ifdef MP-ALIPAY
   my.setNavigationBar({
@@ -18,8 +11,8 @@ onLoad(() => {
   })
 // #endif
 })
-
 </script>
 
-<style>
+<style scoped lang="scss">
+
 </style>

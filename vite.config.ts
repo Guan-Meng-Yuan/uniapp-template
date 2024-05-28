@@ -12,7 +12,7 @@ export default defineConfig(async () => {
                     'vue',
                     'uni-app',
                 ]
-            })
-            , uni(), UnoCSS()],
+            }),
+            uni(), UnoCSS()],
     }
 });

@@ -1,14 +1,4 @@
 <script setup lang="ts">
-import {onLaunch, onShow, onHide} from "@dcloudio/uni-app";
-
-onLaunch(() => {
-// #ifdef MP-ALIPAY
-  my.setNavigationBar({
-    frontColor:'#000000',
-    backgroundColor:'#f8f8f8'
-  })
-// #endif
-});
 onShow(() => {
   console.log("App Show");
 });

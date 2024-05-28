@@ -9,6 +9,9 @@
   "pages": [
     {
       "path": "pages/index/index"
+    },
+    {
+      "path": "pages/test/index"
     }
   ],
   "globalStyle": {
