@@ -12,5 +12,8 @@ export default defineConfig({
         }),
         //@ts-ignore
         presetTypography(),
+    ],
+    shortcuts:[
+        {'c-primary':'c-#4D80F0'}
     ]
 })
