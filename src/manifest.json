@@ -91,7 +91,8 @@
     "enableParallelLoader": true,
     "lazyCodeLoading": "requiredComponents",
     "mergeVirtualHostAttributes": true,
-    "component2": true
+    "component2": true,
+    "styleIsolation": "apply-shared"
   },
   "mp-baidu": {
     "usingComponents": true
