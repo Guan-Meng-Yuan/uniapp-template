@@ -21,6 +21,4 @@ dist
 *.sw?
 pnpm-lock.yaml
 *.iml
-/auto-imports.d.ts
 /mini.project.json
-components.d.ts
