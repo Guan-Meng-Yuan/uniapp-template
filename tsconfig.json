@@ -1,13 +1,13 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "sourceMap": true,
+    "lib": ["esnext", "dom"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     },
-    "lib": ["esnext", "dom"],
-    "types": ["@dcloudio/types","wot-design-uni/global.d.ts"]
+    "types": ["@dcloudio/types", "wot-design-uni/global.d.ts"],
+    "sourceMap": true
   },
   "include": [
     "src/**/*.ts",
