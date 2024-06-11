@@ -8,7 +8,11 @@
   },
   "pages": [
     {
-      "path": "pages/index/index"
+      "path": "pages/index/index",
+      "styles": {
+        "enablePullDownRefresh": true
+      },
+      "layouts": "default"
     },
     {
       "path": "pages/test/index"
@@ -17,7 +21,7 @@
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uniapp-template",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#FFFFFF",
     "backgroundColor": "#F8F8F8"
   }
 }

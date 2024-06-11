@@ -10,7 +10,6 @@
     "uploadFile": 60000,
     "downloadFile": 60000
   },
-  "transformPx": false,
   "debug": false,
   "uniStatistics": {
     "enable": false,
@@ -23,8 +22,7 @@
     "splashscreen": {
       "alwaysShowBeforeRender": true,
       "waiting": true,
-      "autoclose": true,
-      "delay": 0
+      "autoclose": true
     },
     "modules": {},
     "distribute": {
