@@ -1,6 +1,5 @@
 import type { Preset, SourceCodeTransformer } from 'unocss'
 import { defineConfig, presetAttributify, presetIcons, presetTypography, presetUno } from 'unocss'
-
 import {
   presetApplet,
   presetRemRpx,

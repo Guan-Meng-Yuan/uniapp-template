@@ -1,10 +1,9 @@
-import { defineConfig } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
-
-import AutoImport from 'unplugin-auto-import/vite'
 import Components from '@uni-helper/vite-plugin-uni-components'
 import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
+import AutoImport from 'unplugin-auto-import/vite'
+import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default async () => {
