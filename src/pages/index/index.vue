@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useToast } from 'wot-design-uni'
-import api from '@/pages/index/api'
+import api from './api'
 
 const toast = useToast()
 // #ifdef APP-IOS || APP-ANDROID || APP-PLUS || APP-NVUE
