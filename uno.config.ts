@@ -34,7 +34,7 @@ export default defineConfig({
     ...transformers,
   ],
   shortcuts: [{
-    'c-p': 'c-#4d80f0-te',
+    'c-p': 'c-#4d80f0',
     'c-tip': 'c-#bfbfbf',
   }],
 })
