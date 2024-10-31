@@ -41,6 +41,7 @@
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
     "type-check": "vue-tsc --noEmit",
     "uvm": "pnpx @dcloudio/uvm@latest",
+    "clean": "node ./scripts/clean.mjs",
     "reinstall": "pnpm clean --del-lock && pnpm install"
   },
   "dependencies": {
