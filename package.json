@@ -41,7 +41,7 @@
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
     "type-check": "vue-tsc --noEmit",
     "uvm": "pnpx @dcloudio/uvm@latest",
-    "reinstall": "rm -rf node_modules && pn i"
+    "reinstall": "pnpm clean --del-lock && pnpm install"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-4030220241029001",
