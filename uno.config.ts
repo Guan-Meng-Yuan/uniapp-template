@@ -35,6 +35,5 @@ export default defineConfig({
   ],
   shortcuts: [{
     'c-p': 'c-#4d80f0',
-    'c-tip': 'c-#bfbfbf',
   }],
 })
