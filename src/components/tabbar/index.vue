@@ -15,7 +15,7 @@ const items = [
 function scan() {
 }
 
-function onTabbarChange({ value }: { value: number }) {
+function onTabBarChange({ value }: { value: number }) {
   if (items[value].isButton) {
     // @ts-expect-error 别检查
     items[value].click()
@@ -31,7 +31,7 @@ function onTabbarChange({ value }: { value: number }) {
 </script>
 
 <template>
-  <wd-tabbar :model-value="index" placeholder safe-area-inset-bottom fixed @change="onTabbarChange">
+  <wd-tabbar :model-value="index" placeholder safe-area-inset-bottom fixed @change="onTabBarChange">
     <wd-tabbar-item v-for="item in items" :key="item.value" :title="item.title" :icon="item.icon" />
   </wd-tabbar>
 </template>

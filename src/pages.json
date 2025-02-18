@@ -17,7 +17,7 @@
     }
   ],
   "tabBar": {
-    "color": "#FFFFFF",
+    "color": "#000000",
     "selectedColor": "#4D80F0",
     // #ifdef MP-WEIXIN
     "custom": true,
@@ -29,13 +29,18 @@
     "list": [
       {
         "pagePath": "pages/home/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "static/home-unselect.png",
+        "selectedIconPath": "static/home-selected.png"
       },
       {
         "pagePath": "pages/me/index",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "static/me-unselect.png",
+        "selectedIconPath": "static/me-selected.png"
       }
-    ]
+    ],
+    "backgroundColor": "#ffffff"
   },
   "globalStyle": {
     "navigationBarTextStyle": "black",

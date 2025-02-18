@@ -8,7 +8,7 @@ onLoad(() => {
 
 <template>
   <div>我的</div>
-  <!-- #ifdef APP-ANDROID -->
+  <!-- #ifndef APP-PLUS -->
   <tabbar :index="2" />
   <!-- #endif -->
 </template>
