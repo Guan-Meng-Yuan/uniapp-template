@@ -31,7 +31,7 @@ class defHttp {
           if (requestOption.needLoading) {
             requestOption.toast?.close()
           }
-          resolve(data.result as T)
+          resolve(data.data as T)
         },
         fail: (error) => {
           if (requestOption.needLoading) {

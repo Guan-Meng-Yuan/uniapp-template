@@ -17,7 +17,7 @@ declare global{
   }
 
   interface Res<T> {
-    result: T
+    data: T
     success: boolean
     message: string
     tips: string
