@@ -31,13 +31,10 @@ function onTabBarChange({ value }: { value: number }) {
 </script>
 
 <template>
-  <wd-tabbar :model-value="index" placeholder safe-area-inset-bottom fixed @change="onTabBarChange">
+  <wd-tabbar :model-value="index" placeholder safe-area-inset-bottom :fixed="true" @change="onTabBarChange">
     <wd-tabbar-item v-for="item in items" :key="item.value" :title="item.title" :icon="item.icon" />
   </wd-tabbar>
 </template>
 
 <style scoped>
-.scan-item {
-    font-size: 50rpx !important;
-}
 </style>
