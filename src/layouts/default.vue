@@ -6,7 +6,9 @@
   <wd-toast />
   <wd-notify />
   <wd-message-box />
-  <slot />
+  <div h-94.99vh>
+    <slot />
+  </div>
 </template>
 
 <style scoped>
