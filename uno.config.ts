@@ -1,10 +1,6 @@
 import type { Preset, SourceCodeTransformer } from 'unocss'
 import { defineConfig, presetAttributify, presetIcons, presetTypography, presetUno } from 'unocss'
-import {
-  presetApplet,
-  presetRemRpx,
-  transformerAttributify,
-} from 'unocss-applet'
+import { presetApplet, presetRemRpx, transformerAttributify } from 'unocss-applet'
 // uni-app
 const isApplet = process.env?.UNI_PLATFORM?.startsWith('mp-') ?? false
 // taro
@@ -36,5 +32,6 @@ export default defineConfig({
   shortcuts: [{
     'c-p': 'c-#4d80f0',
     'c-tip': 'c-#bfbfbf',
+    'h-f': 'h-94.8459vh',
   }],
 })
