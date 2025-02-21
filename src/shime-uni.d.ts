@@ -9,6 +9,7 @@ declare module 'vue' {
 declare global{
   interface ImportMetaEnv {
     readonly VITE_HTTP_URL: string
+    readonly VITE_API_PREFIX: string
     // 更多环境变量...
   }
 
@@ -29,5 +30,12 @@ declare global{
     method?: 'OPTIONS' | 'GET' | 'HEAD' | 'POST' | 'PUT' | 'DELETE' | 'TRACE' | 'CONNECT'
     needLoading?: boolean
     loadingMessage?: string
+  }
+  interface Base {
+    id?: string
+    createTime?: string
+    createUserId?: string
+    updateTime?: string
+    updateUserId?: string
   }
 }

@@ -1,6 +1,9 @@
+import { isH5 } from '@uni-helper/uni-env'
+
 class defHttp {
   private static async callApi<T>(requestOption: RequestOption) {
-    const httpUrl = import.meta.env.VITE_HTTP_URL
+    const httpUrl = isH5 ? import.meta.env.VITE_API_PREFIX : import.meta.env.VITE_HTTP_URL
+
     const info = uni.getSystemInfoSync()
     const ClientType = info.uniPlatform
     return new Promise<T>((resolve, reject) => {
@@ -8,7 +11,7 @@ class defHttp {
         requestOption.toast?.loading(requestOption.loadingMessage || '加载中')
       }
       uni.request({
-        url: `${httpUrl}/admin${requestOption.url}`,
+        url: `${httpUrl}/${requestOption.url}`,
         method: requestOption.method,
         data: requestOption.data,
         header: {
