@@ -3,7 +3,6 @@ import { isH5 } from '@uni-helper/uni-env'
 class defHttp {
   private static async callApi<T>(requestOption: RequestOption) {
     const httpUrl = isH5 ? import.meta.env.VITE_API_PREFIX : import.meta.env.VITE_HTTP_URL
-
     const info = uni.getSystemInfoSync()
     const ClientType = info.uniPlatform
     return new Promise<T>((resolve, reject) => {
@@ -20,17 +19,19 @@ class defHttp {
         },
         success: (res) => {
           let data = res.data as Res<T>
-          if (typeof data === 'string') {
-            data = JSON.parse(data)
-          }
-          if (res.statusCode !== 200 || !data.success) {
+          if (res.statusCode !== 200 || !data || !data.success) {
             if (requestOption.needLoading) {
               requestOption.toast?.close()
             }
             requestOption.toast?.error({
               msg: data.tips || '网络异常',
             })
+            return
           }
+          if (typeof data === 'string') {
+            data = JSON.parse(data)
+          }
+
           if (requestOption.needLoading) {
             requestOption.toast?.close()
           }
