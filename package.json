@@ -63,6 +63,7 @@
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-4050220250208001",
     "@dcloudio/uni-uts-v1": "3.0.0-alpha-4050220250208001",
     "@uni-helper/uni-env": "^0.1.7",
+    "dayjs": "^1.11.13",
     "ezuikit-js": "^8.1.6",
     "lodash-es": "^4.17.21",
     "vue": "3.4.21",
